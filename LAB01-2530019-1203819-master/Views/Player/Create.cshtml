@@ -1,0 +1,60 @@
+﻿@model LAB01_2530019_1203819.Models.Player
+
+@{
+    ViewData["Title"] = "Crear";
+}
+
+<h1 style="color:lawngreen">Crear</h1>
+
+<h4 style="color:darkslateblue">Player</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Club" class="control-label"></label>
+                <input asp-for="Club" class="form-control" />
+                <span asp-validation-for="Club" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Last_name" class="control-label"></label>
+                <input asp-for="Last_name" class="form-control" />
+                <span asp-validation-for="Last_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="First_name" class="control-label"></label>
+                <input asp-for="First_name" class="form-control" />
+                <span asp-validation-for="First_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Position" class="control-label"></label>
+                <input asp-for="Position" class="form-control" />
+                <span asp-validation-for="Position" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Base_salary" class="control-label"></label>
+                <input asp-for="Base_salary" class="form-control" />
+                <span asp-validation-for="Base_salary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Guaranteed_compensation" class="control-label"></label>
+                <input asp-for="Guaranteed_compensation" class="form-control" />
+                <span asp-validation-for="Guaranteed_compensation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-outline-dark"></
+                <
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

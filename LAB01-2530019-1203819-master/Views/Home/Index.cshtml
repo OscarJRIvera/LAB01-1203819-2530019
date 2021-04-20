@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+
+    <h1 style="color:blueviolet" class="display-4">Welcome</h1>
+    <p>  Diana Alejandra Aragón López - Oscar Josué Rivera Menéndez</p>
+
+
+</div>
+<p>Seleccione el link del tipo de lista que desea utilizar </p>
+
+ @Html.ActionLink("Lista Personalizada", "OptionList", new { id = 0 })
+
+@Html.ActionLink("Lista del Sistema", "OptionList", new { id = 1 })
+

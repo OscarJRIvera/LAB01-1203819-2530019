@@ -1,0 +1,62 @@
+﻿@model LAB01_2530019_1203819.Models.Player
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<h1 style="color:lightgreen">Detalles</h1>
+
+<h4 style="color:darkslateblue">Player</h4>
+
+<div>
+    <h4>Player</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Club)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Club)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Last_name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Last_name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.First_name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.First_name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Position)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Position)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Base_salary)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Base_salary)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Guaranteed_compensation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Guaranteed_compensation)
+        </dd>
+    </dl>
+</div>
+<div>
+
+    <a asp-action="Index">Back to List</a>
+</div>
